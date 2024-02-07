@@ -1,0 +1,5 @@
+module Project
+
+typealias Product = "jvm/app"
+
+product: Product

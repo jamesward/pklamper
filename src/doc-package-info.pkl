@@ -1,0 +1,10 @@
+/// These are docs
+amends "pkl:DocPackageInfo"
+
+name = "pklamper"
+
+version = "0.0.1"
+
+importUri = "package://jamesward.github.com/pklamper/"
+
+issueTracker = "https://github.com/jamesward/pklamper/issues"
