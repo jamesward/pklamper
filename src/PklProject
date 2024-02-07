@@ -7,7 +7,7 @@ package {
   }
   version = read?("env:VERSION")?.dropWhile((s) -> s == "v") ?? "0.0.1-SNAPSHOT"
   baseUri = "package://jamesward.github.com/pklamper"
-  packageZipUrl = "https://github.com/jamesward/pklamper/releases/download/\(name)@\(version)/\(name)@\(version).zip"
+  packageZipUrl = "https://github.com/jamesward/pklamper/releases/download/v\(version)/\(name)@\(version).zip"
   sourceCode = "https://github.com/jamesward/pklamper"
   sourceCodeUrlScheme = "https://github.com/jamesward/pklamper/blob/\(version)/generated-package%{path}#%{line}-%{endLine}"
   license = "Apache-2.0"
