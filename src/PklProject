@@ -5,7 +5,7 @@ package {
   authors {
     "James Ward <james@jamesward.com>"
   }
-  version = read?("env:VERSION")?.replaceFirst("\(name)-", "") ?? "0.0.1-SNAPSHOT"
+  version = read?("env:VERSION")?.replaceFirst("\(name)@", "") ?? "0.0.1-SNAPSHOT"
   baseUri = "package://jamesward.github.com/pklamper"
   packageZipUrl = "https://github.com/jamesward/pklamper/releases/download/\(name)@\(version)/\(name)@\(version).zip"
   sourceCode = "https://github.com/jamesward/pklamper"
