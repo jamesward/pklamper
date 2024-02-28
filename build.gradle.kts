@@ -6,7 +6,10 @@ pkl {
   project {
     packagers {
       register("makePackages") {
-        environmentVariables.put("VERSION", System.getenv("VERSION") ?: "0.0.0")
+        val maybeVersion = System.getenv("VERSION")
+        if (maybeVersion != null) {
+          environmentVariables.put("VERSION", maybeVersion)
+        }
         projectDirectories.from(file("src/"))
       }
     }
